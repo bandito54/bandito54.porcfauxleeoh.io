@@ -1,29 +1,33 @@
 body {
   background: #242426;
   background-size: cover;
-  padding: 30px;
   color: #fff;
   margin: 0 !important;
+
+  max-width: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
 }
 
 .glitch {
-	font-size: 50px;
+	font-size: 40px;
 	line-height: 1;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 100;
-	position: absolute;
+	position: relative;
 	/*top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);*/
-  margin-left: 0.5em;
-  margin-top: 0.1em;
+ /* margin-left: 0.5em;
+  margin-top: 0.1em;*/
+  margin-right: 2em;
 	text-decoration: none;
   color: #fff;
 }
 
 .glitch:before, .glitch:after {
-	display: block;
-	content: 'Accueil';
+	display: inline-block;
+	content: 'Home';
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -95,8 +99,10 @@ body {
 	margin: 0;*/
 	text-decoration: none;
   color: #fff;
+  padding: 10px;
+  margin-right: 0.5em;
   
-  background:
+  /*background:
   linear-gradient(
     to bottom, var(--mainColor) 0%,
     var(--mainColor) 100%
@@ -105,24 +111,24 @@ body {
  background-repeat: repeat-x;
  background-size: 2px 2px;
  text-decoration: none;
- transition: background-size 0.3s;
+ transition: background-size 0.3s;*/
 }
 
 /*C200FB EC0868 32E875 53D8FB F4D58D F0F757*/
-.popup:nth-child(1) {
+.popup:nth-child(2) {
   background:
   linear-gradient(
     to bottom, #C200FB 0%,
     #C200FB 100%
   );
-  background-position: 0 100%;
+ background-position: 0 100%;
  background-repeat: repeat-x;
  background-size: 2px 2px;
  text-decoration: none;
  transition: background-size 0.3s;
 }
 
-.popup:nth-child(2) {
+.popup:nth-child(3) {
   background:
   linear-gradient(
     to bottom, #EC0868 0%,
@@ -135,7 +141,7 @@ body {
   transition: background-size 0.3s;
 }
 
-.popup:nth-child(3) {
+.popup:nth-child(4) {
   background:
   linear-gradient(
     to bottom, #32E875 0%,
@@ -148,7 +154,7 @@ body {
   transition: background-size 0.3s;
 }
 
-.popup:nth-child(4) {
+.popup:nth-child(5) {
   background:
   linear-gradient(
     to bottom, #53D8FB 0%,
@@ -161,7 +167,7 @@ body {
   transition: background-size 0.3s;
 }
 
-  .popup:nth-child(5) {
+.popup:nth-child(6) {
     background:
     linear-gradient(
       to bottom, #F4D58D 0%,
@@ -174,7 +180,7 @@ body {
     transition: background-size 0.3s;
   }
 
-.popup:nth-child(6) {
+.popup:nth-child(7) {
   background:
   linear-gradient(
     to bottom, #F0F757 0%,
@@ -196,14 +202,17 @@ body {
   width: 100%;
   height: auto;
   display: inline-block;
-  margin-left: 13em;
-  margin-top: 1.5em;
+  position: fixed;
+  padding: 1em;
+  z-index: 1;
+  background-color: #242426;
+  box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.418) inset;
 }
 
 #slider { 
   width: 100%;
   margin: 0 auto;
-  margin-top: 2em;
+  padding-top: 4.5em;
 }
 
 #slider figure {
@@ -305,25 +314,39 @@ p {
     margin: 0;
     position: relative;
     margin-top: 0.1em;
+    z-index: 0;
   }
 
   .module {
-    width: 100%;
-    padding-right: 1em;
+    width: 80%;
+    text-align: left;
+    position: relative;
+  }
+  .module:nth-child(even) {
+    margin-right: 4%;
+  }
+
+  .navbar {
+    position: relative;
   }
 }
 
 svg {
-  width: 2000px;
-  height: 2000px;
-  position: fixed;
-  left:0;
-  top:0;
+  width: 3900px;
+  height: 2800px;
+  position: absolute;
+  left:-1200px;
+  top:-1000px;
 }
+
 svg path {
   fill: none;
   /*fill: #6FD08C;*/
-  stroke: #6FD08C;
+  stroke: rgb(0, 255, 64);
   stroke-width: 2;
   stroke-miterlimit:10;
+}
+
+.container {
+  width: 100%;
 }

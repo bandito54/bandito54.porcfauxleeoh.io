@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    var path = document.querySelectorAll('path'), 
-    percentScroll;
+
+    var path = document.querySelectorAll('path'),  percentScroll;
 
 $(path).each(function(){
 this.style.strokeDasharray = this.getTotalLength();
@@ -14,6 +14,8 @@ $(path).each(function(){
 this.style.strokeDashoffset = Math.floor(this.getTotalLength() * (1 - percentScroll));
 });
 };
+
+
 });
 
 
