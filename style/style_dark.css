@@ -1,0 +1,545 @@
+
+/*:root {
+    --mainColor: #8FB8ED;
+    --back: #F6F7EB;
+    --accents: #8FB8ED;
+    --font: #0D1F2D;
+    --nav-font: #0D1F2D;
+  }*/
+  
+  
+  :root {
+    --mainColor: #8FB8ED;
+    --back: #0D1F2D;
+    --accents: #8FB8ED;
+    --font: #0D1F2D;
+    --nav-font: #F6F7EB;
+  }
+  
+  
+  body {
+    background: var(--back);
+    background-size: cover;
+    color: var(--back);
+    margin: 0 !important;
+      font-family: 'Montserrat', sans-serif;
+  
+    line-height: 1.8em;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+  }
+  
+  a img {
+    width: 5em;
+    height: auto;
+    margin-right: 5em;
+    position: relative;
+    float: left;
+  }
+  
+  
+  
+  .darkmod {
+    position: relative;
+    float: right;
+    margin-right: 2em;
+    margin-top: 1.2em;
+  }
+  
+  .switcher {
+    position: relative;
+    float:right;
+    margin-right: 1em;
+    margin-top: 1em;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switcher input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .onoff {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--nav-font);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .onoff:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .onoff {
+    background-color: var(--mainColor);
+  }
+  
+  input:focus + .onoff {
+    box-shadow: 0 0 1px var(--mainColor);
+  }
+  
+  input:checked + .onoff:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  
+  
+  
+  
+  
+  h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72px;
+    z-index: 3;
+    color: var(--nav-font);
+    padding: 0.5em;
+  }
+  
+  .glitch {
+      font-size: 40px;
+      line-height: 1;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      position: relative;
+      /*top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);*/
+   /* margin-left: 0.5em;
+    margin-top: 0.1em;*/
+    margin-right: 2em;
+      text-decoration: none;
+    color: #fff;
+  }
+  
+  .glitch:before, .glitch:after {
+      display: inline-block;
+      content: 'Home';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: .8;
+  }
+  
+  .glitch:after {
+    color: rgb(255, 0, 111);
+      z-index: -2;
+  }
+  
+  .glitch:before {
+    color: #0ff;
+      z-index: -1;
+  }
+  
+  .glitch:hover:before {
+      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  }
+  
+  .glitch:hover:after {
+      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  }
+  
+  @keyframes glitch {
+      0% {
+          -webkit-transform: translate(0);
+          transform: translate(0);
+      }
+      20% {
+          -webkit-transform: translate(-5px, 5px);
+          transform: translate(-5px, 5px);
+      }
+      40% {
+          -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+      }
+      60% {
+          -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+      }
+      80% {
+          -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+      }
+  
+      to {
+          -webkit-transform: translate(0);
+          transform: translate(0);
+      }
+  }
+  
+  
+  
+  
+  .popup {
+    float: left;
+    margin-top: 1em;
+    font-size: 20px;
+      line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      position: relative;
+  /*	top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;*/
+      text-decoration: none;
+    padding: 10px;
+    margin-right: 0.5em;
+    background:
+    linear-gradient(
+      to bottom, var(--mainColor) 0%,
+      var(--mainColor) 100%
+    );
+   background-position: 0 100%;
+   background-repeat: repeat-x;
+   background-size: 2px 2px;
+   text-decoration: none;
+   transition: background-size 0.3s;
+  }
+  
+  .popup:hover {
+    color: var(--back);
+  }
+  
+  /*C200FB EC0868 32E875 53D8FB F4D58D F0F757*/
+  /*.popup:nth-child(2) {
+    background:
+    linear-gradient(
+      to bottom, #C200FB 0%,
+      #C200FB 100%
+    );
+   background-position: 0 100%;
+   background-repeat: repeat-x;
+   background-size: 2px 2px;
+   text-decoration: none;
+   transition: background-size 0.3s;
+  }*/
+  
+  .popup:hover {
+    background-size: 2px 400px;
+    transition: background-size 0.8s;
+  }
+  
+  .navbar {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    padding: 1em;
+    z-index: 1;
+    background-color: var(--accents);
+    color: var(--nav-font);
+   /* box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.418) inset;*/
+  }
+  
+  .navbar a {
+    color: var(--nav-font);
+  }
+  
+  #slider { 
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 4.5em;
+  }
+  
+  #slider figure {
+    position: relative; 
+    width: 200%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+  
+    animation: 30s slidy infinite;
+  }
+  
+  #slider figure img {
+    width: 50%; height: auto; float: left;
+  }
+  
+  #slider {
+    width: 80%; max-width: 1000px; overflow: hidden
+  }
+  
+  @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    30% { left: 0%; }
+    40% { left: -100%; }
+    50% { left: -100%; }
+    60% { left: -100%; }
+    70% { left: 0%; }
+    80% { left: 0%; }
+    90% { left: -100%; }
+    100% { left: -100%; }
+  }
+  
+  .boxes {
+    margin-left: 10%;
+  }
+  
+  .boxes span {
+    color: var(--mainColor);
+  }
+  
+  .module {
+    width: 40%;
+    height: 15em;
+    position: relative;
+    display: inline-block;    
+    padding: 20px;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    /*box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);*/
+    color: var(--font);
+    text-align: left;
+    background-color: var(--back);
+    border: 2px solid var(--mainColor);
+    border-radius: 10px;
+  }
+  .module:nth-child(even) {
+    margin-right: 3%;
+    float: left;
+  }
+  
+  span {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    padding-left: 0.3em;
+  }
+  
+  p {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  @media screen and (min-width: 200px) and (max-width: 700px) {
+    .popup {
+      width: 100%;
+      display: block;
+      margin: 0;
+      position: relative;
+      margin-top: 0.1em;
+      z-index: 0;
+    }
+  
+    .module {
+      width: 80%;
+      text-align: left;
+      position: relative;
+    }
+    .module:nth-child(even) {
+      margin-right: 4%;
+    }
+  
+    .navbar {
+      position: relative;
+    }
+  }
+  
+  svg {
+    /*width: 4900px;
+    height: 4050px;
+    left:-2200px;
+    top:-2000px;*/
+    position: absolute;
+    left:0;
+    top:300px;
+    z-index: -1;
+  }
+  
+  svg path {
+    z-index: 0;
+    fill: none;
+    /*fill: #6FD08C;*/
+    stroke: var(--mainColor);
+    stroke-width: 1;
+    stroke-miterlimit:10;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  ul li {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 0.1em;
+  }
+  
+  ul li .icon {
+    position: relative;
+    margin-right: 0.5em;
+    width: 1.5em;
+  }
+  
+  .sub-header {
+    background-color: var(--accents);
+    width: 100%;
+    height: auto;
+    color: var(--back);
+  }
+  .historique {
+    background-image: url("../assets/bike-histo.jpeg");
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: contain;
+    background-size: cover;
+  }
+  
+  
+  
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--back);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+  }
+  
+  /* Container around content */
+  .historic {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .historic::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: var(--back);
+    border: 4px solid var(--mainColor);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: -80px;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--back);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--back);
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid var(--back);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--back) transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .exp {
+    padding: 20px 30px;
+    background-color: var(--back);
+    position: relative;
+    border-radius: 6px;
+    color: var(--font);
+  }
+  
+  .exp h2 {
+    color: var(--mainColor);
+  }
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .historic {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .historic::before {
+    left: 60px;
+    border: medium solid var(--back);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--back) transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }

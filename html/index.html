@@ -5,74 +5,121 @@
         <title>Thomas BARIC</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../style/style.css">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+        <link id="style_dl" rel="stylesheet" href="../style/style.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
-
-
-   
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
-
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
        <script src="../script/draw.js" async defer></script>
+       <script src="../script/darkmod.js" async defer></script>
        <script src="../script/tiles.js" async defer></script>
-
-
-
+       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
-
 
     <body>
 
-            <script src="../script/svg.js"></script>
 
         <div class="container">
         
         <div class="navbar"> 
-            <a href="#" class="glitch">Home</a>
+           <!-- <a href="#" class="glitch">Home</a> --> 
+            <a href="#"><img src="../assets/baric_ai.png" alt="TomTom"></a>
+            <a href="#aboutme" class="popup">About me</a>
+            <a href="#training" class="popup">Training</a>
+            <a href="#xp" class="popup">XP</a>
+            <a href="#hobbies" class="popup">Hobbies</a>
+            <a href="#tools" class="popup">Tools</a>
+            <a href="#languages" class="popup">Languages</a>
 
-            <a href="#" class="popup">About me</a>
-            <a href="#" class="popup">Training</a>
-            <a href="#" class="popup">XP</a>
-            <a href="#" class="popup">Hobbies</a>
-            <a href="#" class="popup">Tools</a>
-            <a href="#" class="popup">Languages</a>
-            
+            <div class="darkmod">Mode nuit</div>
+            <label class="switcher">
+                    <input id="darkornot" type="checkbox" onchange=swap_mod()>
+                    <span class="onoff"></span>
+            </label>
+
         </div>
-
-        <div id="slider">
+        <!--<div id="slider">
                 <figure>
                   <img src="../assets/toto.JPG" alt>
                   <img src="../assets/toto2.JPG" alt>
                 </figure>
-        </div>
+        </div> -->
+        <h1>Thomas BARIC</h1>
+        <div class="boxes">
+                <script src="../script/svg2.js"></script>
 
-        <section>
-            <div class="module" data-aos="flip-up">
+            <div id="aboutme" class="module" data-aos="flip-up">
                 <span>About me</span>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
             </div>
-            <div class="module" data-aos="flip-up">
+            <div id="training" class="module" data-aos="flip-up">
                 <span>Training</span>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
             </div>
-            <div class="module" data-aos="flip-up">
+            <div id="xp" class="module" data-aos="flip-up">
                 <span>XP</span>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
             </div>
-            <div class="module" data-aos="flip-up">
+            <div id="hobbies" class="module" data-aos="flip-up">
                 <span>Hobbies</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
+                <ul>
+                    <li><i class="fas fa-bicycle icon"></i>Cyclisme</li>
+                    <li><i class="fas fa-tools icon"></i>Bricolage</li>
+                    <li><i class="fas fa-gamepad icon"></i>Jeux Vidéos</li>
+                </ul>
             </div>
-            <div class="module" data-aos="flip-up">
+            <div id="tools" class="module" data-aos="flip-up">
                 <span>Tools</span>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
             </div> 
-            <div class="module" data-aos="flip-up">
-                <span>Languages</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
+            <div id="skills" class="module" data-aos="flip-up">
+                <span>Skills</span>
+                <ul>
+                    <li><i class="fab fa-java icon fa-2x"></i>Java</li>
+                    <li><i class="fab fa-js icon fa-2x"></i>Javascript</li>
+                    <li><i class="fab fa-php icon fa-2x"></i>Php</li>
+                    <li><i class="fas fa-code icon fa-2x"></i>HTML</li>
+                    <li><i class="fab fa-css3-alt icon fa-2x"></i>CSS</li>
+                    <li><i class="fab fa-node-js icon fa-2x"></i>NodeJs</li>
+                </ul>
             </div>
-        </section>
+
+        </div>
+
+      <!--<div class="historique" data-aos="flip-up">
+            <span>Historique</span>
+        </div>-->
+        <div class="sub-header" data-aos="flip-up" data-aos-duration="10000">
+            <h1>Experiences</h1>
+                <div class="timeline">
+                        <div data-aos="flip-left" class="historic left">
+                          <div class="exp">
+                            <h2>2019 - 2018</h2>
+                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                          </div>
+                        </div>
+                        <div data-aos="flip-right" class="historic right">
+                          <div class="exp">
+                            <h2>2017 - 2016</h2>
+                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                          </div>
+                        </div>
+                        <div data-aos="flip-left" class="historic left">
+                          <div class="exp">
+                            <h2>2015 - 2014</h2>
+                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                          </div>
+                        </div>
+                        <div data-aos="flip-right" class="historic right">
+                          <div class="exp">
+                            <h2>2014 - 2013</h2>
+                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                          </div>
+                        </div>
+                </div>
+        </div>
 
         
     </div>
