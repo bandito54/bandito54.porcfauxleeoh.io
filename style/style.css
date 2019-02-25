@@ -8,12 +8,13 @@
 }
 
 /*
-:root {
-  --mainColor: #8FB8ED;
-  --back: #F6F7EB;
-  --accents: #0D1F2D;
-  --font: #0D1F2D;
-  --nav-font: #8FB8ED;
+ :root {
+    --mainColor: #8FB8ED;
+    --back: #0D1F2D;
+    --accents: #8FB8ED;
+    --font: #0D1F2D;
+    --nav-font: #F6F7EB;
+  }
 }*/
 
 
@@ -99,10 +100,6 @@ input:checked + .onoff:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
-
-
-
 
 
 h1 {
@@ -334,30 +331,6 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (min-width: 200px) and (max-width: 700px) {
-  .popup {
-    width: 100%;
-    display: block;
-    margin: 0;
-    position: relative;
-    margin-top: 0.1em;
-    z-index: 0;
-  }
-
-  .module {
-    width: 80%;
-    text-align: left;
-    position: relative;
-  }
-  .module:nth-child(even) {
-    margin-right: 4%;
-  }
-
-  .navbar {
-    position: relative;
-  }
-}
-
 svg {
   /*width: 4900px;
   height: 4050px;
@@ -400,7 +373,9 @@ ul li .icon {
   width: 100%;
   height: auto;
   color: var(--back);
+  display: inline-block;
 }
+
 .historique {
   background-image: url("../assets/bike-histo.jpeg");
   width: 100%;
@@ -512,7 +487,7 @@ ul li .icon {
   color: var(--mainColor);
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 830px) {
   /* Place the timelime to the left */
   .timeline::after {
   left: 31px;
@@ -542,4 +517,70 @@ ul li .icon {
   .right {
   left: 0%;
   }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .left {
+    left: 0px;
+  }
+
+  .navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .darkmod {
+    display: inline-block;
+  }
+
+  .switcher {
+    display: inline-block;
+  }
+
+  .popup {
+    width: 80%;
+    display: block;
+    margin: 0;
+    position: relative;
+    margin-top: 0.1em;
+    z-index: 0;
+  }
+
+  .boxes {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 50px;
+    padding: 0;
+    display: block;
+    line-height: 0.7em;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .module {
+    width: 80%;
+    position: relative;
+    display: inline-block;
+    margin-top: 1em;
+    margin-right: 1em;
+    z-index: 1;
+  }
+
+  /*.module:nth-child(even) {
+    margin-right: 3%;
+    float: left;
+  }*/
 }
