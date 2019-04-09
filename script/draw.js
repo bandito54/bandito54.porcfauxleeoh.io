@@ -11,7 +11,7 @@ $(path).each(function(){
 
 window.onscroll = function(){
   percentScroll = (window.pageYOffset / (document.body.offsetHeight - window.innerHeight)) / 13;
-	console.log(percentScroll);
+//	console.log(percentScroll);
   $(path).each(function(){
     this.style.strokeDashoffset = Math.floor(this.getTotalLength() * (1 - percentScroll));
   });
