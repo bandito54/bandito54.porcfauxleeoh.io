@@ -454,9 +454,17 @@ ul li .icon {
   left: -80px;
 }
 
+.left .exp {
+  margin-left: 60px;
+}
+
 /* Place the container to the right */
 .right {
   left: 50%;
+}
+
+.right .exp {
+  margin-right: 60px;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -499,6 +507,7 @@ ul li .icon {
   position: relative;
   border-radius: 6px;
   color: var(--font);
+
 }
 
 .exp h2 {
@@ -515,8 +524,8 @@ ul li .icon {
   left: 31px;
   }
 
-  .exp:nth-child(odd) {
-    margin-left: 50px;
+  .left .exp {
+    margin-left: 0px;
   }
 
   .sub-header {
@@ -549,7 +558,7 @@ ul li .icon {
   }
 
   .exp {
-    width: 60%;
+    width: 65%;
   }
 }
 
