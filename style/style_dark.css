@@ -7,7 +7,6 @@
   --nav-font: #0D1F2D;
 }*/
 
-
  :root {
     --mainColor: #8FB8ED;
     --back: #0D1F2D;
@@ -31,7 +30,7 @@ body {
   overflow-x: hidden;
 }
 
-a img {
+.navbar a img {
   width: 5em;
   height: auto;
   margin-right: 5em;
@@ -39,13 +38,15 @@ a img {
   float: left;
 }
 
-
-
 .darkmod {
   position: relative;
   float: right;
   margin-right: 2em;
   margin-top: 1.2em;
+}
+
+.responsive-darkmod {
+  display: none;
 }
 
 .switcher {
@@ -297,40 +298,65 @@ h1 {
   90% { left: -100%; }
   100% { left: -100%; }
 }
+/*
+.slidin {
+  position: relative;
+  animation: 5s slidy infinite;
+}
+
+.slidin li {
+  background-color: #19B49B;
+}
+*/
 
 .boxes {
-  margin-left: 10%;
+  margin: 0 auto;
+  margin-left: 5em;
 }
 
 .boxes span {
   color: var(--mainColor);
 }
 
+.module-left {
+width: 50%;
+display: block;
+float: left;
+text-align: center;
+}
+
+.module-right {
+width: 50%;
+display: block;
+float: right;
+}
+
 .module {
-  width: 40%;
-  height: 15em;
+  width: 75%;
+  height: auto;
   position: relative;
   display: inline-block;    
-  padding: 20px;
-  margin-right: 3%;
-  margin-bottom: 3%;
-  /*box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);*/
-  color: var(--nav-font);
   text-align: left;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10%;
+  color: var(--nav-font);
   background-color: var(--back);
   border: 2px solid var(--mainColor);
-  border-radius: 10px;
 }
+/*
 .module:nth-child(even) {
   margin-right: 3%;
   float: left;
 }
+*/
 
 span {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 35px;
   padding-left: 0.3em;
+  color: var(--nav-font);
 }
 
 p {
@@ -362,16 +388,22 @@ svg path {
   width: 100%;
 }
 
-ul li {
+.module ul li {
   list-style-type: none;
   text-align: left;
   padding-left: 0;
   margin-bottom: 0.1em;
+  display: inline-block;
+  width: 45%;
+}
+
+#skills ul li:nth-child(1) {
+  width: 100%;
 }
 
 ul li .icon {
   position: relative;
-  margin-right: 0.5em;
+  margin-right: 0.2em;
   width: 1.5em;
 }
 
@@ -443,9 +475,17 @@ ul li .icon {
   left: -80px;
 }
 
+.left .exp {
+  margin-left: 60px;
+}
+
 /* Place the container to the right */
 .right {
   left: 50%;
+}
+
+.right .exp {
+  margin-right: 60px;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -488,19 +528,53 @@ ul li .icon {
   position: relative;
   border-radius: 6px;
   color: var(--nav-font);
+
 }
 
 .exp h2 {
   color: var(--mainColor);
 }
+
 .exp h3 {
   color: var(--mainColor);
 }
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 830px) {
+
+
+@media screen and (max-width: 1000px) {
+  
+  h1 {
+    margin: 0;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  .switcher {
+    position: relative;
+    float: right;
+    margin-top: 0;
+  }
+  
+  .darkmod {
+    position: relative;
+    float: right;
+    margin-top: 0;
+  }
+
+  .responsive-darkmod {
+    display: initial;
+  }
+  
   /* Place the timelime to the left */
   .timeline::after {
   left: 31px;
+  }
+
+  .left .exp {
+    margin-left: 0px;
+  }
+
+  .sub-header {
+    width: 100%;
   }
   
   /* Full-width containers */
@@ -527,12 +601,51 @@ ul li .icon {
   .right {
   left: 0%;
   }
+
+  .exp {
+    width: 65%;
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+
+  .boxes {
+    margin-left: 1.3em;
+  }
+
+  .navtoggle {
+    visibility: initial;
+    width: 60%;
+  }
+
+  #menuToggle {
+    margin-top: 1em;
+    width: 50%;
+  }
+  
+  #toto {
+    visibility: visible;
+    text-align: center;
+    display: inline-block;
+    margin-top: 3em;
+    width: 100%;
+  }
+
+  #toto a img {
+    width: 200px;
+  }
+
   body {
     padding: 0;
     margin: 0;
+  }
+
+  .module-left {
+    width: 100%;
+  }
+
+  .module-right {
+    width: 100%;
   }
 
   .left {
@@ -543,6 +656,7 @@ ul li .icon {
     position: relative;
     width: 100%;
     height: auto;
+    display: none;
   }
 
   .darkmod {
@@ -569,8 +683,8 @@ ul li .icon {
   h1 {
     font-size: 50px;
     padding: 0;
-    display: block;
-    line-height: 0.7em;
+    line-height: 1em;
+    
   }
 
   .container {
@@ -579,9 +693,9 @@ ul li .icon {
     margin: 0;
   }
 
-
   .module {
     width: 80%;
+    height: auto;
     position: relative;
     display: inline-block;
     margin-top: 1em;
@@ -589,8 +703,49 @@ ul li .icon {
     z-index: 1;
   }
 
+  .module ul li {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 0.1em;
+    display: inline-block;
+    width: 100%;
+  }
+
   /*.module:nth-child(even) {
     margin-right: 3%;
     float: left;
   }*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

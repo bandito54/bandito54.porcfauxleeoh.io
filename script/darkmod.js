@@ -1,5 +1,5 @@
 function swap_mod() {
-    if (document.getElementById('darkornot').checked)
+    if (document.getElementById('darkornot').checked || document.getElementById('darkornot_2').checked)
     {
         document.getElementById("style_dl").href="./style/style_dark.css"; 
         console.log("checked");

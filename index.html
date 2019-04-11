@@ -16,7 +16,6 @@
 
     <body>
 
-
         <div class="container">
 
         <div class="navbar"> 
@@ -29,22 +28,14 @@
             <a href="#hobbies" class="popup">Hobbies</a>
             <a href="#tools" class="popup">Tools</a>
             <a href="#languages" class="popup">Languages</a>
-
-           <div class="darkmod">Mode nuit</div>
+          
+            <div class="darkmod">Mode nuit</div>
             <label class="switcher">
                     <input id="darkornot" type="checkbox" onchange=swap_mod()>
                     <span class="onoff"></span>
             </label>
-
+            
         </div>
-          <!-- <div id="toto" class="slidin">
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-            </ul>
-          </div>-->
         <nav class="navtoggle" role="navigation">
             <div id="menuToggle">
               <input type="checkbox" />
@@ -62,74 +53,76 @@
             </div>
         </nav>
 
-        <!--<div id="slider">
-                <figure>
-                  <img src="./assets/toto.JPG" alt>
-                  <img src="./assets/toto2.JPG" alt>
-                </figure>
-        </div> 
-        <div id="toto">
-          <a href="#"><img src="./assets/baric_ai.png" alt="TomTom"></a>
-        </div>-->
+        <div class="responsive-darkmod">
+          <label class="switcher">
+                    <input id="darkornot_2" type="checkbox" onchange=swap_mod()>
+                    <span class="onoff"></span>
+          </label>
+          <div class="darkmod">Mode Nuit</div>
+        </div>
+
         <h1>Thomas BARIC</h1>
         
         <div class="boxes">
               <script src="./script/svg2.js"></script>
-            <div id="aboutme" class="module" data-aos="flip-up">
-                <span>About me</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
+            <div class="module-left">
+                <div id="aboutme" class="module" data-aos="flip-up">
+                    <span>About me</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
+                </div>
+                <div id="training" class="module" data-aos="flip-up">
+                    <span>Training</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
+                </div>
+                <div id="xp" class="module" data-aos="flip-up">
+                    <span>XP</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
+                </div>
             </div>
-            <div id="training" class="module" data-aos="flip-up">
-                <span>Training</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
+            <div class="module-right">
+                <div id="hobbies" class="module" data-aos="flip-up">
+                    <span>Hobbies</span>
+                    <ul>
+                        <li><i class="fas fa-bicycle icon"></i>Cyclisme</li>
+                        <li><i class="fas fa-tools icon"></i>Bricolage</li>
+                        <li><i class="fas fa-gamepad icon"></i>Jeux Vidéos</li>
+                    </ul>
+                </div>
+                <div id="tools" class="module" data-aos="flip-up">
+                    <span>Tools</span>
+                    <ul>
+                      <li>- Final Cut Pro</li>
+                      <li>- VisualCode</li>
+                      <li>- VirtualBox</li>
+                      <li>- Photoshop</li>
+                      <li>- Illustrator</li>
+                      <li>- Windows</li>
+                      <li>- Mac Os</li>
+                      <li>- Sketch</li>
+                      <li>- Emacs</li>
+                      <li>- Linux</li>
+                      <li>- Gimp</li>
+                    </ul>
+                </div> 
+                <div id="skills" class="module" data-aos="flip-up">
+                    <span>Skills</span>
+                    <ul>
+                        <li><i class="fab fa-java icon fa-2x"></i>React-Native</li>
+                        <li><i class="fab fa-java icon fa-2x"></i>LotusScript</li>
+                        <li><i class="fab fa-java icon fa-2x"></i>Bootstrap</li>
+                        <li><i class="fab fa-java icon fa-2x"></i>Symfony</li>
+                        <li><i class="fab fa-java icon fa-2x"></i>C</li>
+                        <li><i class="fab fa-java icon fa-2x"></i>C++</li>
+                        <li><i class="fab fa-java icon fa-2x"></i>Angular</li>
+                        <li><i class="fab fa-java icon fa-2x"></i>Java</li>
+                        <li><i class="fab fa-js icon fa-2x"></i>Javascript</li>
+                        <li><i class="fab fa-php icon fa-2x"></i>Php</li>
+                        <li><i class="fas fa-code icon fa-2x"></i>HTML</li>
+                        <li><i class="fab fa-css3-alt icon fa-2x"></i>CSS</li>
+                        <li><i class="fab fa-node-js icon fa-2x"></i>NodeJs</li>
+                    </ul>
+                </div>
             </div>
-            <div id="xp" class="module" data-aos="flip-up">
-                <span>XP</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam quam iusto eos voluptatibus maiores neque ab beatae. Repellat, minus deleniti iure modi repellendus veniam totam tempora earum beatae voluptatum!</p>
-            </div>
-            <div id="hobbies" class="module" data-aos="flip-up">
-                <span>Hobbies</span>
-                <ul>
-                    <li><i class="fas fa-bicycle icon"></i>Cyclisme</li>
-                    <li><i class="fas fa-tools icon"></i>Bricolage</li>
-                    <li><i class="fas fa-gamepad icon"></i>Jeux Vidéos</li>
-                </ul>
-            </div>
-            <div id="tools" class="module" data-aos="flip-up">
-                <span>Tools</span>
-                <ul>
-                  <li>Final Cut Pro</li>
-                  <li>VisualCode</li>
-                  <li>VirtualBox</li>
-                  <li>Photoshop</li>
-                  <li>Illustrator</li>
-                  <li>Windows</li>
-                  <li>Mac Os</li>
-                  <li>Sketch</li>
-                  <li>Emacs</li>
-                  <li>Linux</li>
-                  <li>Gimp</li>
-                </ul>
-            </div> 
-            <div id="skills" class="module" data-aos="flip-up">
-                <span>Skills</span>
-                <ul>
-                    <li><i class="fab fa-java icon fa-2x"></i>React-Native</li>
-                    <li><i class="fab fa-java icon fa-2x"></i>LotusScript</li>
-                    <li><i class="fab fa-java icon fa-2x"></i>Bootstrap</li>
-                    <li><i class="fab fa-java icon fa-2x"></i>Symfony</li>
-                    <li><i class="fab fa-java icon fa-2x"></i>C</li>
-                    <li><i class="fab fa-java icon fa-2x"></i>C++</li>
-                    <li><i class="fab fa-java icon fa-2x"></i>Angular</li>
-                    <li><i class="fab fa-java icon fa-2x"></i>Java</li>
-                    <li><i class="fab fa-js icon fa-2x"></i>Javascript</li>
-                    <li><i class="fab fa-php icon fa-2x"></i>Php</li>
-                    <li><i class="fas fa-code icon fa-2x"></i>HTML</li>
-                    <li><i class="fab fa-css3-alt icon fa-2x"></i>CSS</li>
-                    <li><i class="fab fa-node-js icon fa-2x"></i>NodeJs</li>
-                </ul>
-            </div>
-
         </div>
 
         <div class="sub-header" data-aos="flip-up" data-aos-duration="10000">
@@ -139,28 +132,34 @@
                           <div class="exp">
                             <h2>Octobre 2018 - Octobre 2019</h2>
                             <h3>NANCY- Epitech Nancy</h3>
-                            <p>Responsable pédagogique Web@cadémie</p>
+                            <p>Responsable pédagogique Web@cadémie : encadrement pédagogique et suivi des apprenants.</p>
                           </div>
                         </div>
                         <div data-aos="flip-right" class="historic right">
                           <div class="exp">
                             <h2>Septembre 2017 - Juin 2018</h2>
                             <h3>BARCELONE - Epitech Barcelone</h3>
-                            <p>Assistant pédagogique / formateur</p>
+                            <p>Assistant pédagogique : encadrement pédagogique et suivi des étudiants locaux et de la CodingAcademy.</p>
                           </div>
                         </div>
                         <div data-aos="flip-left" class="historic left">
                           <div class="exp">
                             <h2>Avril 2017 - Aout 2017</h2>
                             <h3>METZ - GIE Amphithéatre Batigère</h3>
-                            <p>Intégration d’outils intranet & refonte graphique</p>
+                            <p>Intégration d’outils intranet & refonte graphique :
+                              <ul>
+                                <li>Outil de mise en ligne d'albums photo</li>
+                                <li>Page d'édition de profil avec outil de rognage photo</li>
+                                <li>Adaptation responsive de plusieurs pages intranet</li>
+                              </ul>
+                            </p>
                           </div>
                         </div>
                         <div data-aos="flip-right" class="historic right">
                           <div class="exp">
                             <h2>Aout 2015 - Décembre 2015</h2>
                             <h3>METZ - SNCF Réseau Infrapôle Lorraine</h3>
-                            <p>Solution automatisée service compatibilité & finances</p>
+                            <p>Solution automatisée service comptabilité & finances</p>
                           </div>
                         </div>
                 </div>
@@ -170,7 +169,6 @@
     </div>
         
     </body>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="./script/draw.js" async defer></script>
     <script src="./script/darkmod.js" async defer></script>
