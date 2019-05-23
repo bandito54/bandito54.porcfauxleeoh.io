@@ -20,7 +20,7 @@
 body {
   background: var(--back);
   background-size: cover;
-  color: var(--back);
+  color: var(--nav-font);
   margin: 0 !important;
 	font-family: 'Montserrat', sans-serif;
 
@@ -356,7 +356,6 @@ span {
   font-family: 'Montserrat', sans-serif;
   font-size: 35px;
   padding-left: 0.3em;
-  color: var(--nav-font);
 }
 
 p {
@@ -397,13 +396,13 @@ svg path {
   width: 45%;
 }
 
-#skills ul li:nth-child(1) {
+#languages ul li {
   width: 100%;
 }
 
 ul li .icon {
   position: relative;
-  margin-right: 0.2em;
+  text-align: center;
   width: 1.5em;
 }
 
@@ -539,6 +538,19 @@ ul li .icon {
   color: var(--mainColor);
 }
 
+@media screen and (max-width: 470px) {
+  .module ul li {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 470px) and (max-width: 1000px) {
+  .module ul li {
+    width: 50%;
+    float:left;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   
@@ -621,6 +633,10 @@ ul li .icon {
   #menuToggle {
     margin-top: 1em;
     width: 50%;
+  }
+
+  #menuToggle span {
+    background: var(--nav-font);
   }
   
   #toto {
@@ -708,8 +724,9 @@ ul li .icon {
     text-align: left;
     padding-left: 0;
     margin-bottom: 0.1em;
-    display: inline-block;
-    width: 100%;
+   /* display: inline-block; 
+    width: 50%;
+    float: left;*/
   }
 
   /*.module:nth-child(even) {

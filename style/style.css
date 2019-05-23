@@ -344,6 +344,11 @@ float: right;
   background-color: var(--back);
   border: 2px solid var(--mainColor);
 }
+
+#languages ul li {
+  width: 100%;
+}
+
 /*
 .module:nth-child(even) {
   margin-right: 3%;
@@ -396,13 +401,9 @@ svg path {
   width: 45%;
 }
 
-#skills ul li:nth-child(1) {
-  width: 100%;
-}
-
 ul li .icon {
   position: relative;
-  margin-right: 0.2em;
+  text-align: center;
   width: 1.5em;
 }
 
@@ -538,6 +539,19 @@ ul li .icon {
   color: var(--mainColor);
 }
 
+@media screen and (max-width: 470px) {
+  .module ul li {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 470px) and (max-width: 1000px) {
+  .module ul li {
+    width: 50%;
+    float:left;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   
@@ -711,8 +725,9 @@ ul li .icon {
     text-align: left;
     padding-left: 0;
     margin-bottom: 0.1em;
-    display: inline-block;
-    width: 100%;
+   /* display: inline-block; 
+    width: 50%;
+    float: left;*/
   }
 
   /*.module:nth-child(even) {
