@@ -391,6 +391,7 @@ svg path {
 
 .container {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .module ul li {
