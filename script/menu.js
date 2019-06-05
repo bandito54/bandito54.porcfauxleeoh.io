@@ -10,12 +10,13 @@ $(window).scroll(function(){
     }
 });
 
+
 document.querySelectorAll('a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
+        $('html, body').animate({ scrollTop:$(document.querySelector(this.getAttribute('href'))).offset().top}, 300);
+
+   // document.querySelector(this.getAttribute('href')).scrollIntoView({ block: 'start',  behavior: 'auto' });
   });
 });
