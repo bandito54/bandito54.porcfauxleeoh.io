@@ -267,7 +267,7 @@ h1 {
   padding-top: 4.5em;
 }
 
-#slider figure {
+/*#slider figure {
   position: relative; 
   width: 200%;
   margin: 0;
@@ -276,7 +276,7 @@ h1 {
   text-align: left;
 
   animation: 30s slidy infinite;
-}
+}*/
 
 #slider figure img {
   width: 50%; height: auto; float: left;
@@ -431,7 +431,7 @@ ul li .icon {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
