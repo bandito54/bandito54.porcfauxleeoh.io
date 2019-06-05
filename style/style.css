@@ -542,8 +542,8 @@ ul li .icon {
 @media screen and (max-width: 470px) {
 
   body {
-    Overflow-x: hidden;
-    Overflow-y:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
   }
 
   .module ul li {
@@ -555,8 +555,8 @@ ul li .icon {
 @media screen and (min-width: 470px) and (max-width: 1000px) {
 
   body {
-    Overflow-x: hidden;
-    Overflow-y:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
   }
 
   .module ul li {
@@ -568,8 +568,8 @@ ul li .icon {
 @media screen and (max-width: 1000px) {
 
   body {
-    Overflow-x: hidden;
-    Overflow-y:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
   }
   
   h1 {
@@ -640,8 +640,8 @@ ul li .icon {
 @media screen and (max-width: 1000px) {
 
   body {
-    Overflow-x: hidden;
-    Overflow-y:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
   }
 
   .boxes {
