@@ -25,7 +25,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 
   line-height: 1.8em;
-  width: 100%;
+  max-width: 100%;
   max-height: 100%;
   overflow-x: hidden;
 }
@@ -540,6 +540,12 @@ ul li .icon {
 }
 
 @media screen and (max-width: 470px) {
+
+  body {
+    Overflow-x: hidden;
+    Overflow-y:auto;
+  }
+
   .module ul li {
     width: 100%;
   }
@@ -547,6 +553,12 @@ ul li .icon {
 
 
 @media screen and (min-width: 470px) and (max-width: 1000px) {
+
+  body {
+    Overflow-x: hidden;
+    Overflow-y:auto;
+  }
+
   .module ul li {
     width: 50%;
     float:left;
@@ -554,6 +566,11 @@ ul li .icon {
 }
 
 @media screen and (max-width: 1000px) {
+
+  body {
+    Overflow-x: hidden;
+    Overflow-y:auto;
+  }
   
   h1 {
     margin: 0;
@@ -621,6 +638,11 @@ ul li .icon {
 }
 
 @media screen and (max-width: 1000px) {
+
+  body {
+    Overflow-x: hidden;
+    Overflow-y:auto;
+  }
 
   .boxes {
     margin-left: 1.3em;
