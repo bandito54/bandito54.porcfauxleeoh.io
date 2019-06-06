@@ -3,7 +3,7 @@
   --mainColor: #8FB8ED;
   --back: #F6F7EB;
   --accents: #8FB8ED;
-  --font: #0D1F2D;
+  --nav-font: #0D1F2D;
   --nav-font: #0D1F2D;
 }*/
 
@@ -11,7 +11,7 @@
     --mainColor: #8FB8ED;
     --back: #0D1F2D;
     --accents: #8FB8ED;
-    --font: #0D1F2D;
+    --nav-font: #0D1F2D;
     --nav-font: #F6F7EB;
   }
 
@@ -25,7 +25,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 
   line-height: 1.8em;
-  max-width: 100%;
+  max-width: auto;
   max-height: 100%;
   overflow-x: hidden;
 }
@@ -267,7 +267,7 @@ h1 {
   padding-top: 4.5em;
 }
 
-#slider figure {
+/*#slider figure {
   position: relative; 
   width: 200%;
   margin: 0;
@@ -276,14 +276,14 @@ h1 {
   text-align: left;
 
   animation: 30s slidy infinite;
-}
+}*/
 
 #slider figure img {
   width: 50%; height: auto; float: left;
 }
 
 #slider {
-  width: 80%; max-width: 1000px; overflow: hidden
+  width: 80%; max-width: auto; overflow: hidden
 }
 
 @keyframes slidy {
@@ -344,6 +344,11 @@ float: right;
   background-color: var(--back);
   border: 2px solid var(--mainColor);
 }
+
+#languages ul li {
+  width: 100%;
+}
+
 /*
 .module:nth-child(even) {
   margin-right: 3%;
@@ -385,6 +390,7 @@ svg path {
 
 .container {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .module ul li {
@@ -394,10 +400,6 @@ svg path {
   margin-bottom: 0.1em;
   display: inline-block;
   width: 45%;
-}
-
-#languages ul li {
-  width: 100%;
 }
 
 ul li .icon {
@@ -418,7 +420,7 @@ ul li .icon {
   background-image: url("../assets/bike-histo.jpeg");
   width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: auto;
   max-height: 100%;
   background-size: contain;
   background-size: cover;
@@ -430,7 +432,7 @@ ul li .icon {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: auto;
   margin: 0 auto;
 }
 
@@ -539,6 +541,12 @@ ul li .icon {
 }
 
 @media screen and (max-width: 470px) {
+
+  body {
+    overflow-x: hidden;
+    overflow-y:auto;
+  }
+
   .module ul li {
     width: 100%;
   }
@@ -546,6 +554,12 @@ ul li .icon {
 
 
 @media screen and (min-width: 470px) and (max-width: 1000px) {
+
+  body {
+    overflow-x: hidden;
+    overflow-y:auto;
+  }
+
   .module ul li {
     width: 50%;
     float:left;
@@ -553,6 +567,11 @@ ul li .icon {
 }
 
 @media screen and (max-width: 1000px) {
+
+  body {
+    overflow-x: hidden;
+    overflow-y:auto;
+  }
   
   h1 {
     margin: 0;
@@ -620,6 +639,11 @@ ul li .icon {
 }
 
 @media screen and (max-width: 1000px) {
+
+  body {
+    overflow-x: hidden;
+    overflow-y:auto;
+  }
 
   .boxes {
     margin-left: 1.3em;
