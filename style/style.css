@@ -320,14 +320,13 @@ h1 {
 
 .module-left {
 width: 50%;
-display: block;
+display: inline-block;
 float: left;
-text-align: center;
 }
 
 .module-right {
 width: 50%;
-display: block;
+display: inline-block;
 float: right;
 }
 
