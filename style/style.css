@@ -316,6 +316,12 @@ h1 {
   /*margin-left: 5em;*/
 }
 
+.boxes img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+
 .boxes span {
   color: var(--mainColor);
 }
@@ -549,6 +555,10 @@ ul li .icon {
     overflow-y:auto;
   }
 
+  .module ul {
+    padding: 0;
+  }
+
   .module ul li {
     width: 100%;
   }
@@ -740,7 +750,7 @@ ul li .icon {
     position: relative;
     display: inline-block;
     margin-top: 1em;
-    margin-right: 1em;
+   /* margin-right: 1em;*/
     z-index: 1;
   }
 

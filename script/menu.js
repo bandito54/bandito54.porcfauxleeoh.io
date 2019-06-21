@@ -16,11 +16,8 @@ $(window).scroll(function(){
 
   for (i = 0; i < menu.length; i++)
   {
-    console.log(menu[i]);
     var spans = document.getElementById('menuToggle');
       var myspans = spans.getElementsByTagName('span');
-      console.log(myspans[2]);
-
 /***** LE TOGGLE
  * 
  * 
@@ -30,9 +27,7 @@ var barres = document.getElementById("burger");
  
 var switcher = 0;
 
-barres.onclick = function() {
-  console.log("yo");
-  
+barres.onclick = function() {  
   if (document.getElementById('darkornot').checked || document.getElementById('darkornot_2').checked)
     {
       if (switcher == 0) {
@@ -77,9 +72,6 @@ barres.onclick = function() {
 
 
     menu[i].onclick = function() {
-      console.log("xd");
-
-      //document.getElementById("menu").style.transform = "translate(-100%, 0)";
       document.getElementById("menu").style = "transform: translate(-100%, 0);";
   switcher = 1;
       myspans[0].style = "transform: none; background: #000000";
