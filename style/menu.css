@@ -73,7 +73,7 @@
  
  #menuToggle span:nth-last-child(2)
  {
-   transform-origin: 0% 100%;
+  /* transform-origin: 0% 100%;*/
  }
  
  /* 
@@ -108,6 +108,11 @@
    transform: rotate(-360deg) scale(0.9, 1) translate(-0.5px, 0px); /* translate(10px, 10px); /*scale(0.2, 0.2);*/
  }
  
+ #burger {
+   cursor: pointer;
+   padding: 1em;
+   z-index: 5;
+ }
 
  
  /*
