@@ -33,20 +33,40 @@ var switcher = 0;
 barres.onclick = function() {
   console.log("yo");
   
-  if (switcher == 0) {
-    myspans[0].style = "transform: rotate(330deg) scale(0.5, 1) translate(-10px, 8px); background: #FFFFFF"
-    myspans[1].style = "transform: rotate(-360deg) scale(0.9, 1) translate(-0.5px, 0px);background: #FFFFFF"
-    myspans[2].style = "transform: rotate(330deg) scale(0.5, 1) translate(-13px, 6px);background: #FFFFFF;     transform: rotate(-330deg) scale(0.5, 1) translate(-10px, -7px);"
-    document.getElementById("menu").style = "transform: translate(0%, 0);";
-    switcher = 1;    
-  }
-  else {
-      myspans[0].style = "transform: none; background: #000000"
-      myspans[1].style = "transform: none; background: #000000"
-      myspans[2].style = "transform: none; background: #000000"     
-      document.getElementById("menu").style = "transform: translate(-100%, 0);";
-      switcher = 0;
-  }
+  if (document.getElementById('darkornot').checked || document.getElementById('darkornot_2').checked)
+    {
+      if (switcher == 0) {
+        myspans[0].style = "transform: rotate(330deg) scale(0.5, 1) translate(-10px, 8px); background: #F6F7EB"
+        myspans[1].style = "transform: rotate(-360deg) scale(0.9, 1) translate(-0.5px, 0px);background: #F6F7EB"
+        myspans[2].style = "transform: rotate(330deg) scale(0.5, 1) translate(-13px, 6px);background: #F6F7EB;     transform: rotate(-330deg) scale(0.5, 1) translate(-10px, -7px);"
+        document.getElementById("menu").style = "transform: translate(0%, 0);";
+        switcher = 1;    
+      }
+      else {
+          myspans[0].style = "transform: none; background: #F6F7EB"
+          myspans[1].style = "transform: none; background: #F6F7EB"
+          myspans[2].style = "transform: none; background: #F6F7EB"     
+          document.getElementById("menu").style = "transform: translate(-100%, 0);";
+          switcher = 0;
+      }
+    }
+    else {
+      if (switcher == 0) {
+        myspans[0].style = "transform: rotate(330deg) scale(0.5, 1) translate(-10px, 8px); background: #F6F7EB"
+        myspans[1].style = "transform: rotate(-360deg) scale(0.9, 1) translate(-0.5px, 0px);background: #F6F7EB"
+        myspans[2].style = "transform: rotate(330deg) scale(0.5, 1) translate(-13px, 6px);background: #F6F7EB;     transform: rotate(-330deg) scale(0.5, 1) translate(-10px, -7px);"
+        document.getElementById("menu").style = "transform: translate(0%, 0);";
+        switcher = 1;    
+      }
+      else {
+          myspans[0].style = "transform: none; background: #0D1F2D"
+          myspans[1].style = "transform: none; background: #0D1F2D"
+          myspans[2].style = "transform: none; background: #0D1F2D"     
+          document.getElementById("menu").style = "transform: translate(-100%, 0);";
+          switcher = 0;
+      }
+    }
+  
 }
 
     /***** LE TOGGLE
